@@ -4,64 +4,862 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website Rian - Bedimcode</title>
+      <title>Mochamad Zidan Rusdhiana</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <span class="nav__logo-circle">Z</span>
+               <span class="nav__logo-name">Mochamad Zidan Rusdhiana</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <span class="nav__title">Menu</span>
+
+               <h3 class="nav__name">Mochamad Zidan Rusdhiana</h3>
+
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link" data-i18n="nav-home">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link" data-i18n="nav-about">About Me</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link" data-i18n="nav-projects">Projects</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link nav__link-button" data-i18n="nav-contact">Contact Me</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__buttons">
+               <!-- Language Switcher -->
+               <div class="language-switcher">
+                  <button class="lang-btn active" data-lang="id">ID</button>
+                  <button class="lang-btn" data-lang="en">EN</button>
+               </div>
+               <!-- Theme button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-4-line"></i>
+               </div>
+            </div>
+         </nav>
       </header>
 
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home section" id="home">
-            
+            <div class="home__container container grid">
+               <h1 class="home__name" data-i18n="home-name">
+                  Mochamad Zidan R
+               </h1>
+
+               <div class="home__perfil">
+                  <div class="home__image">
+                     <img src="assets/img/zidan-1.jpg" alt="image" class="home__img">
+
+                     <div class="home__shadow"></div>
+
+                     <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                     <img src="assets/img/random-lines.svg" alt="" class="home__line">
+
+                     <div class="geometric-box"></div>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://www.instagram.com/zidan.rusdhiana" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/mochamad-zidan-rusdhiana" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+
+                     <a href="https://github.com/zidanrusdhiana" target="_blank" class="home__social-link">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__info">
+                  <p class="home__description" data-i18n="home-desc">
+                     Computer Science student specializing in <b>Data and Artificial Intelligence (AI)</b> 
+                     with a strong foundation in <b>Software Engineering.</b>
+                  </p>
+
+                  <a href="#about" class="home__scroll">
+                     <div class="home__scroll-box">
+                        <i class="ri-arrow-down-s-line"></i>
+                     </div>
+
+                     <span class="home__scroll-text" data-i18n="home-scroll">Scroll Down</span>
+                  </a>
+               </div>
+            </div>
          </section>
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            
-         </section>
+            <div class="about__container container grid">
+               <h2 class="section__title-1">
+                  <span data-i18n="about-title">About Me.</span>
+               </h2>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            
+               <div class="about__perfil">
+                  <div class="about__image">
+                     <img src="assets/img/zidan-2.jpg" alt="image" class="about__img">
+
+                     <div class="about__shadow"></div>
+
+                     <div class="geometric-box"></div>
+                     <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                     <div class="about__box"></div>
+                  </div>
+               </div>
+
+               <div class="about__info">
+                  <p class="about__description" data-i18n="about-desc">
+                     Driven by analytical thinking 
+                     and a problem-solving mindset. 
+                     Demonstrated teamwork experience in managing organizational programs 
+                     and collaborating across cross-functional teams.
+                  </p>
+
+                  <ul class="about__list">
+                     <li class="about__item">
+                        <span data-i18n="about-label-lang"><b>Programming Languages:</b></span> C, C++, Python, JavaScript, TypeScript, PHP, Java, Dart, SQL, Go
+                     </li>
+                     <li class="about__item">
+                        <span data-i18n="about-label-tech"><b>Tech:</b></span> Next.js, React, Laravel, Flutter, Node.js, PostgreSQL, MongoDB, MySQL
+                     </li>
+                     <li class="about__item">
+                        <span data-i18n="about-label-tools"><b>Tools:</b></span> Git, Docker, Apache Airflow, REST API, TensorFlow, Keras, Selenium
+                     </li>
+                  </ul>
+
+                  <div class="about__buttons">
+                     <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> <span data-i18n="about-btn-contact">Contact Me</span>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/mochamad-zidan-rusdhiana" target="_blank" class="button__ghost">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
          </section>
 
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
-            
+            <h2 class="section__title-1">
+               <span data-i18n="projects-title">Projects.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+               <!-- ProGram -->
+               <article class="projects__card" data-project="program" onclick="openModal('program')">
+                  <div class="projects__image">
+                     <img src="assets/img/program/1.png" alt="ProGram" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-program-subtitle">MERN Stack</h3>
+                     <h2 class="projects__title" data-i18n="proj-program-title">ProGram - Social Media</h2>
+
+                     <p class="projects__description" data-i18n="proj-program-desc">
+                        Website sosial media dengan fitur messaging real-time, 
+                        stories, dan posts menggunakan MERN Stack.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- DINAMIK 20 -->
+               <article class="projects__card" data-project="dinamik" onclick="openModal('dinamik')">
+                  <div class="projects__image">
+                     <img src="assets/img/dinamik/1.png" alt="DINAMIK 20" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-dinamik-subtitle">Website</h3>
+                     <h2 class="projects__title" data-i18n="proj-dinamik-title">DINAMIK 20 - Competition</h2>
+
+                     <p class="projects__description" data-i18n="proj-dinamik-desc">
+                        Website kompetisi dengan sistem pendaftaran, 
+                        upload berkas, dan dashboard peserta.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- PahamSaham -->
+               <article class="projects__card" data-project="pahamsaham" onclick="openModal('pahamsaham')">
+                  <div class="projects__image">
+                     <img src="assets/img/pahamsaham/1.png" alt="PahamSaham" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-paham-subtitle">Data Pipeline</h3>
+                     <h2 class="projects__title" data-i18n="proj-paham-title">PahamSaham - ETL Dashboard</h2>
+
+                     <p class="projects__description" data-i18n="proj-paham-desc">
+                        Pipeline ETL otomatis untuk scraping dan visualisasi 
+                        data saham menggunakan Apache Airflow.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- Dino the Annihilator -->
+               <article class="projects__card" data-project="dino" onclick="openModal('dino')">
+                  <div class="projects__image">
+                     <img src="assets/img/dino/1.png" alt="Dino Game" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-dino-subtitle">Java Game</h3>
+                     <h2 class="projects__title" data-i18n="proj-dino-title">Dino the Annihilator</h2>
+
+                     <p class="projects__description" data-i18n="proj-dino-desc">
+                        Arcade game dengan arsitektur MVVM, collision detection, 
+                        dan sistem leaderboard database.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- Dashboard DIA UPI -->
+               <article class="projects__card" data-project="dia" onclick="openModal('dia')">
+                  <div class="projects__image">
+                     <img src="assets/img/dia/3.jpg" alt="Dashboard DIA" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-dia-subtitle">Backend Service</h3>
+                     <h2 class="projects__title" data-i18n="proj-dia-title">Dashboard Kerjasama DPIA</h2>
+
+                     <p class="projects__description" data-i18n="proj-dia-desc">
+                        Backend service untuk mengelola data kerjasama mitra 
+                        Directorate of Partnerships UPI.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- LetMeCook -->
+               <article class="projects__card" data-project="letmecook" onclick="openModal('letmecook')">
+                  <div class="projects__image">
+                     <img src="assets/img/letmecook/7.png" alt="LetMeCook" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-cook-subtitle">Mobile App</h3>
+                     <h2 class="projects__title" data-i18n="proj-cook-title">LetMeCook - Recipe App</h2>
+
+                     <p class="projects__description" data-i18n="proj-cook-desc">
+                        Aplikasi mobile cross-platform untuk pencarian dan 
+                        manajemen resep menggunakan Flutter.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- ZRentCar -->
+               <article class="projects__card" data-project="zrental" onclick="openModal('zrental')">
+                  <div class="projects__image">
+                     <img src="assets/img/zrental/1.png" alt="ZRentCar" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-rent-subtitle">Full-Stack</h3>
+                     <h2 class="projects__title" data-i18n="proj-rent-title">ZRentCar - Car Rental</h2>
+
+                     <p class="projects__description" data-i18n="proj-rent-desc">
+                        Website rental mobil dengan sistem autentikasi dan 
+                        payment gateway Midtrans.
+                     </p>
+                  </div>
+               </article>
+            </div>
          </section>
+
+         <!--==================== PROJECT MODALS ====================-->
+         <!-- Modal ProGram -->
+         <div id="modal-program" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('program')">&times;</span>
+               <h2 class="modal-title">ProGram - Website Sosial Media</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Backend Developer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Nov 2025 – Present</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>MongoDB, Express.js, React, Node.js, Socket.IO, JWT</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-program-desc">Website sosial media lengkap dengan fitur posts, stories, dan real-time messaging.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-program-li1">Merancang arsitektur database NoSQL scalable dengan MongoDB dan Mongoose</li>
+                        <li data-i18n="modal-program-li2">Mengembangkan RESTful API dengan autentikasi JWT & Bcrypt</li>
+                        <li data-i18n="modal-program-li3">Mengimplementasikan komunikasi real-time menggunakan Socket.IO untuk messaging, typing status, dan notifikasi</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/program/1.png" alt="ProGram 1" class="slider-image active">
+                           <img src="assets/img/program/2.png" alt="ProGram 2" class="slider-image">
+                           <img src="assets/img/program/3.png" alt="ProGram 3" class="slider-image">
+                           <img src="assets/img/program/4.png" alt="ProGram 4" class="slider-image">
+                           <img src="assets/img/program/5.png" alt="ProGram 5" class="slider-image">
+                           <img src="assets/img/program/6.png" alt="ProGram 6" class="slider-image">
+                           <img src="assets/img/program/7.png" alt="ProGram 7" class="slider-image">
+                           <img src="assets/img/program/8.png" alt="ProGram 8" class="slider-image">
+                           <img src="assets/img/program/9.png" alt="ProGram 9" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal DINAMIK -->
+         <div id="modal-dinamik" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('dinamik')">&times;</span>
+               <h2 class="modal-title">DINAMIK 20 - Website Kompetisi</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Backend Developer & Database Administrator</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Okt 2025 – Present</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>Next.js, PostgreSQL, REST API, Azure Blob Storage, Supabase</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-dinamik-desc">Platform kompetisi online dengan sistem pendaftaran, upload berkas, dan dashboard peserta terintegrasi.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-dinamik-li1">Merancang dan mengimplementasikan arsitektur database PostgreSQL dari awal</li>
+                        <li data-i18n="modal-dinamik-li2">Mengembangkan logika bisnis backend untuk registrasi, upload berkas, validasi pembayaran, dan submisi karya</li>
+                        <li data-i18n="modal-dinamik-li3">Membangun REST API yang reliable menggunakan Next.js</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/dinamik/1.png" alt="DINAMIK 1" class="slider-image active">
+                           <img src="assets/img/dinamik/2.png" alt="DINAMIK 2" class="slider-image">
+                           <img src="assets/img/dinamik/3.png" alt="DINAMIK 3" class="slider-image">
+                           <img src="assets/img/dinamik/4.png" alt="DINAMIK 4" class="slider-image">
+                           <img src="assets/img/dinamik/5.png" alt="DINAMIK 5" class="slider-image">
+                           <img src="assets/img/dinamik/6.png" alt="DINAMIK 6" class="slider-image">
+                           <img src="assets/img/dinamik/7.png" alt="DINAMIK 7" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal PahamSaham -->
+         <div id="modal-pahamsaham" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('pahamsaham')">&times;</span>
+               <h2 class="modal-title">PahamSaham - ETL Pipeline Dashboard</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Data Engineer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Feb 2025 – Mei 2025</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>Apache Airflow, Python, Selenium, MongoDB, Docker, Next.js</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-paham-desc">Pipeline ETL otomatis untuk scraping, transformasi, dan visualisasi data saham dengan dashboard analisis.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-paham-li1">Merancang pipeline Extract, Transform, Load otomatis menggunakan Apache Airflow, Python, dan Docker</li>
+                        <li data-i18n="modal-paham-li2">Menggunakan Selenium untuk scraping dan ekstraksi data saham</li>
+                        <li data-i18n="modal-paham-li3">Memuat data yang telah ditransformasi ke MongoDB untuk dashboard visualisasi</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/pahamsaham/1.png" alt="PahamSaham 1" class="slider-image active">
+                           <img src="assets/img/pahamsaham/2.png" alt="PahamSaham 2" class="slider-image">
+                           <img src="assets/img/pahamsaham/3.png" alt="PahamSaham 3" class="slider-image">
+                           <img src="assets/img/pahamsaham/4.png" alt="PahamSaham 4" class="slider-image">
+                           <img src="assets/img/pahamsaham/airflow.png" alt="PahamSaham Airflow" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal Dino -->
+         <div id="modal-dino" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('dino')">&times;</span>
+               <h2 class="modal-title">Dino the Annihilator - Arcade Game</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Java Software Engineer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Mei 2025 – Jun 2025</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>Java, Java Swing, AWT, MySQL, JDBC</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-dino-desc">Arcade game dengan arsitektur MVVM yang clean, sistem collision detection presisi, dan leaderboard terintegrasi database.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-dino-li1">Merancang arsitektur perangkat lunak modular dengan pola desain MVVM</li>
+                        <li data-i18n="modal-dino-li2">Mengembangkan game loop dan algoritma collision detection menggunakan Java Swing dan AWT</li>
+                        <li data-i18n="modal-dino-li3">Mengintegrasikan MySQL melalui JDBC untuk sistem persistensi data dan leaderboard</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/dino/1.png" alt="Dino 1" class="slider-image active">
+                           <img src="assets/img/dino/2.png" alt="Dino 2" class="slider-image">
+                           <img src="assets/img/dino/3.png" alt="Dino 3" class="slider-image">
+                           <img src="assets/img/dino/4.png" alt="Dino 4" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal DIA -->
+         <div id="modal-dia" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('dia')">&times;</span>
+               <h2 class="modal-title">Dashboard Kerjasama Mitra DPIA UPI</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Backend Engineer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Mar 2025 – Jun 2025</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>PostgreSQL, Backend Service</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-dia-desc">Backend service untuk transformasi digital manajemen data kerjasama mitra Directorate of Partnerships and International Affairs UPI.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-dia-li1">Mentransformasi proses integrasi data dari sistem manual ke database PostgreSQL terpusat</li>
+                        <li data-i18n="modal-dia-li2">Membangun backend service untuk mengelola dan menyajikan data kerjasama mitra</li>
+                        <li data-i18n="modal-dia-li3">Meningkatkan aksesibilitas dan akurasi pelaporan data bagi direktorat</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/dia/1.jpg" alt="DIA 1" class="slider-image active">
+                           <img src="assets/img/dia/2.jpg" alt="DIA 2" class="slider-image">
+                           <img src="assets/img/dia/3.jpg" alt="DIA 3" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal LetMeCook -->
+         <div id="modal-letmecook" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('letmecook')">&times;</span>
+               <h2 class="modal-title">LetMeCook - Aplikasi Resep Mobile</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Mobile Developer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Feb 2025 – Mei 2025</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>Flutter, PostgreSQL, Dart</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-cook-desc">Aplikasi mobile cross-platform untuk pencarian resep, manajemen user, dan daftar resep favorit.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-cook-li1">Mengembangkan aplikasi mobile cross-platform (iOS/Android) dari konsep hingga implementasi</li>
+                        <li data-i18n="modal-cook-li2">Merancang skema database menggunakan PostgreSQL</li>
+                        <li data-i18n="modal-cook-li3">Mengimplementasikan fitur pencarian resep, manajemen user, dan daftar resep user</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/letmecook/1.png" alt="LetMeCook 1" class="slider-image active">
+                           <img src="assets/img/letmecook/2.png" alt="LetMeCook 2" class="slider-image">
+                           <img src="assets/img/letmecook/3.png" alt="LetMeCook 3" class="slider-image">
+                           <img src="assets/img/letmecook/4.png" alt="LetMeCook 4" class="slider-image">
+                           <img src="assets/img/letmecook/5.png" alt="LetMeCook 5" class="slider-image">
+                           <img src="assets/img/letmecook/6.png" alt="LetMeCook 6" class="slider-image">
+                           <img src="assets/img/letmecook/7.png" alt="LetMeCook 7" class="slider-image">
+                           <img src="assets/img/letmecook/8.png" alt="LetMeCook 8" class="slider-image">
+                           <img src="assets/img/letmecook/9.png" alt="LetMeCook 9" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal ZRental -->
+         <div id="modal-zrental" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('zrental')">&times;</span>
+               <h2 class="modal-title">ZRentCar - Website Rental Mobil</h2>
+               
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Full-Stack Developer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Mei 2024 – Juni 2024</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>Laravel, Blade, Tailwind CSS, MySQL, Midtrans, Laravel Jetstream</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-rent-desc">Website rental mobil full-stack dengan sistem autentikasi aman dan integrasi payment gateway.</p>
+                     
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-rent-li1">Membangun backend aplikasi menggunakan Laravel dengan sistem autentikasi Laravel Jetstream & Fortify</li>
+                        <li data-i18n="modal-rent-li2">Merancang user interface responsif dengan Blade dan Tailwind CSS</li>
+                        <li data-i18n="modal-rent-li3">Mengintegrasikan payment gateway Midtrans untuk transaksi booking dengan database MySQL</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/zrental/1.png" alt="ZRental 1" class="slider-image active">
+                           <img src="assets/img/zrental/2.png" alt="ZRental 2" class="slider-image">
+                           <img src="assets/img/zrental/3.png" alt="ZRental 3" class="slider-image">
+                           <img src="assets/img/zrental/4.png" alt="ZRental 4" class="slider-image">
+                           <img src="assets/img/zrental/5.png" alt="ZRental 5" class="slider-image">
+                           <img src="assets/img/zrental/6.png" alt="ZRental 6" class="slider-image">
+                           <img src="assets/img/zrental/7.png" alt="ZRental 7" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            
+            <div class="contact__container grid">
+               <div class="contact__data">
+                  <h2 class="section__title-2">
+                     <span data-i18n="contact-title">Contact Me.</span>
+                  </h2>
+
+                  <p class="contact__description-1" data-i18n="contact-desc-1">
+                     I will read all emails. Send me any 
+                     message you want and I'll get back to you.
+                  </p>
+
+                  <p class="contact__description-2" data-i18n="contact-desc-2">
+                     I need your <b>Name</b> and <b>Email Address</b>, but 
+                     you won't receive anything other than your reply.
+                  </p>
+
+                  <div class="geometric-box"></div>
+               </div>
+
+               <div class="contact__mail">
+                  <h2 class="contact__title" data-i18n="contact-form-title">
+                     Send Me A Message
+                  </h2>
+
+                  <form action="" class="contact__form" id="contact-form">
+                     <div class="contact__group">
+                        <div class="contact__box">
+                           <input type="text" name="user_name" class="contact__input" id="name" required data-i18n="contact-ph-name" placeholder="First Name">
+                           <label for="name" class="contact__label" data-i18n="contact-ph-name">First Name</label>
+                        </div>
+
+                        <div class="contact__box">
+                           <input type="email" name="user_email" class="contact__input" id="email" required data-i18n="contact-ph-email" placeholder="Email Address">
+                           <label for="email" class="contact__label" data-i18n="contact-ph-email">Email Address</label>
+                        </div>
+                     </div>
+
+                     <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required data-i18n="contact-ph-subject" placeholder="Subject">
+                        <label for="subject" class="contact__label" data-i18n="contact-ph-subject">Subject</label>
+                     </div>
+
+                     <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" required data-i18n="contact-ph-msg" placeholder="Message"></textarea>
+                        <label for="message" class="contact__label" data-i18n="contact-ph-msg">Message</label>
+                     </div>
+
+                     <p class="contact__message" id="contact-message"></p>
+
+                     <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i> <span data-i18n="contact-btn-send">Send Message</span>
+                     </button>
+                  </form>
+               </div>
+
+               <div class="contact__social">
+                  <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+                  <div class="contact__social-data">
+                     <div>
+                        <p class="contact__social-description-1" data-i18n="contact-social-1">
+                           Does not send emails
+                        </p>
+
+                        <p class="contact__social-description-2" data-i18n="contact-social-2">
+                           Write me on my social networks
+                        </p>
+                     </div>
+
+                     <div class="contact__social-links">
+                        <a href="https://www.facebook.com/zidan.rush" target="_blank" class="contact__social-link">
+                           <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/zidan.rusdhiana" target="_blank" class="contact__social-link">
+                           <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/mochamad-zidan-rusdhiana" target="_blank" class="contact__social-link">
+                           <i class="ri-linkedin-box-line"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#home" class="footer__link" data-i18n="footer-link-home">Home</a>
+               </li>
+
+               <li>
+                  <a href="#about" class="footer__link" data-i18n="footer-link-about">About</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer__link" data-i18n="footer-link-projects">Projects</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; Mochamad Zidan Rusdhiana, 2025.
+            </span>
+         </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
