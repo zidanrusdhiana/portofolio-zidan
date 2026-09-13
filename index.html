@@ -36,6 +36,10 @@
                   </li>
 
                   <li class="nav__item">
+                     <a href="#experience" class="nav__link" data-i18n="nav-experience">Experience</a>
+                  </li>
+
+                  <li class="nav__item">
                      <a href="#projects" class="nav__link" data-i18n="nav-projects">Projects</a>
                   </li>
 
@@ -155,7 +159,7 @@
                         <span data-i18n="about-label-tech"><b>Tech:</b></span> Next.js, React, Laravel, Flutter, Node.js, PostgreSQL, MongoDB, MySQL
                      </li>
                      <li class="about__item">
-                        <span data-i18n="about-label-tools"><b>Tools:</b></span> Git, Docker, Apache Airflow, REST API, TensorFlow, Keras, Selenium
+                        <span data-i18n="about-label-tools"><b>Tools:</b></span> Git, Docker, Apache Airflow, REST API, TensorFlow, Keras, Selenium, BeautifulSoup
                      </li>
                   </ul>
 
@@ -172,6 +176,94 @@
             </div>
          </section>
 
+         <!--==================== EXPERIENCE ====================-->
+         <section class="experience section" id="experience">
+            <h2 class="section__title-1">
+               <span data-i18n="experience-title">Experience.</span>
+            </h2>
+
+            <div class="experience__container container grid">
+               <!-- PT Bahtera Lentera Jaya -->
+               <article class="experience__card">
+                  <div class="experience__header">
+                     <div class="experience__heading">
+                        <h3 class="experience__company">PT Bahtera Lentera Jaya</h3>
+                        <p class="experience__role" data-i18n="exp-blj-role">Data Engineer Intern</p>
+                     </div>
+
+                     <span class="experience__date">Jan 2026 – <span data-i18n="exp-present">Present</span></span>
+                  </div>
+
+                  <ul class="experience__list">
+                     <li data-i18n="exp-blj-li1">
+                        Mengembangkan dan mengoptimalkan big-data pipeline untuk pengumpulan dan distribusi data profil profesional
+                        (database 851 juta+ record dengan ratusan juta pembaruan setiap bulan) menggunakan Python, Node.js, dan Go.
+                     </li>
+                     <li data-i18n="exp-blj-li2">
+                        Membangun mekanisme konsistensi data yang menandai profil tidak lengkap dan menahannya dari distribusi
+                        sampai seluruh bagian data (REST dan GraphQL) lengkap, didukung index database baru.
+                     </li>
+                     <li data-i18n="exp-blj-li3">
+                        Mengembangkan Real-Time Scraping API terdokumentasi OpenAPI/Swagger yang mengembalikan data profil
+                        terstruktur berdasarkan URL, dengan pengamanan API key.
+                     </li>
+                     <li data-i18n="exp-blj-li4">
+                        Membangun worker session provider berbasis RabbitMQ dan bot monitoring Telegram untuk statistik
+                        operasional harian dan alerting.
+                     </li>
+                  </ul>
+
+                  <div class="experience__tags">
+                     <span class="experience__tag">Python</span>
+                     <span class="experience__tag">Node.js</span>
+                     <span class="experience__tag">Go</span>
+                     <span class="experience__tag">MongoDB</span>
+                     <span class="experience__tag">Redis</span>
+                     <span class="experience__tag">Elasticsearch</span>
+                     <span class="experience__tag">RabbitMQ</span>
+                     <span class="experience__tag">Docker</span>
+                     <span class="experience__tag">AWS S3</span>
+                  </div>
+               </article>
+
+               <!-- PT Hanggar Tujuh Belas -->
+               <article class="experience__card">
+                  <div class="experience__header">
+                     <div class="experience__heading">
+                        <h3 class="experience__company">PT Hanggar Tujuh Belas</h3>
+                        <p class="experience__role" data-i18n="exp-hanggar-role">Software Developer Intern</p>
+                     </div>
+
+                     <span class="experience__date">Mar 2026 – Jun 2026</span>
+                  </div>
+
+                  <ul class="experience__list">
+                     <li data-i18n="exp-hanggar-li1">
+                        Mengembangkan sistem manajemen HR internal dengan absensi face recognition via webcam, alur persetujuan
+                        cuti dan izin dua tingkat, role-based access control, serta ekspor laporan Excel.
+                     </li>
+                     <li data-i18n="exp-hanggar-li2">
+                        Membangun web app galeri foto mekanik dan pelaporan lapangan dengan upload presigned URL ke S3 /
+                        Cloudflare R2, autentikasi NextAuth, dan generate laporan PDF secara on-the-fly.
+                     </li>
+                  </ul>
+
+                  <div class="experience__tags">
+                     <span class="experience__tag">Next.js</span>
+                     <span class="experience__tag">TypeScript</span>
+                     <span class="experience__tag">PostgreSQL</span>
+                     <span class="experience__tag">NextAuth</span>
+                     <span class="experience__tag">Cloudflare R2</span>
+                     <span class="experience__tag">face-api.js</span>
+                  </div>
+
+                  <button class="experience__link" onclick="openModal('hanggar17')">
+                     <i class="ri-image-line"></i> <span data-i18n="exp-see-project">See the project</span>
+                  </button>
+               </article>
+            </div>
+         </section>
+
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
             <h2 class="section__title-1">
@@ -179,6 +271,74 @@
             </h2>
 
             <div class="projects__container container grid">
+               <!-- Hanggar17 Internal System -->
+               <article class="projects__card" data-project="hanggar17" onclick="openModal('hanggar17')">
+                  <div class="projects__image">
+                     <img src="assets/img/hanggar17/1.png" alt="Hanggar17 Internal System" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-hanggar-subtitle">Internal System</h3>
+                     <h2 class="projects__title" data-i18n="proj-hanggar-title">Hanggar17 - HR & Field Report</h2>
+
+                     <p class="projects__description" data-i18n="proj-hanggar-desc">
+                        Sistem HR dengan absensi face recognition dan aplikasi
+                        pelaporan lapangan mekanik dengan generate PDF.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- INDI -->
+               <article class="projects__card" data-project="indi" onclick="openModal('indi')">
+                  <div class="projects__image">
+                     <img src="assets/img/indi/1.png" alt="INDI" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-indi-subtitle">AI Web Platform</h3>
+                     <h2 class="projects__title" data-i18n="proj-indi-title">INDI - Driving Institute</h2>
+
+                     <p class="projects__description" data-i18n="proj-indi-desc">
+                        Company profile dan platform asesmen psikometri pengemudi
+                        berbasis AI dengan laporan otomatis.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- PT ANA Global Solusion -->
+               <article class="projects__card" data-project="ptana" onclick="openModal('ptana')">
+                  <div class="projects__image">
+                     <img src="assets/img/ptana/1.png" alt="PT ANA Global Solusion" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-ptana-subtitle">Company Profile</h3>
+                     <h2 class="projects__title" data-i18n="proj-ptana-title">PT ANA Global Solusion</h2>
+
+                     <p class="projects__description" data-i18n="proj-ptana-desc">
+                        Website company profile penyedia jasa training dan
+                        sertifikasi K3 dengan animasi Framer Motion.
+                     </p>
+                  </div>
+               </article>
+
+               <!-- Makara Creative Lab -->
+               <article class="projects__card" data-project="makara" onclick="openModal('makara')">
+                  <div class="projects__image">
+                     <img src="assets/img/makara/1.png" alt="Makara Creative Lab" class="projects__img">
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle" data-i18n="proj-makara-subtitle">Creative Portfolio</h3>
+                     <h2 class="projects__title" data-i18n="proj-makara-title">Makara Creative Lab</h2>
+
+                     <p class="projects__description" data-i18n="proj-makara-desc">
+                        Portfolio agensi kreatif dengan hero slider dinamis dan
+                        smooth scrolling berbasis Lenis.
+                     </p>
+                  </div>
+               </article>
+
                <!-- ProGram -->
                <article class="projects__card" data-project="program" onclick="openModal('program')">
                   <div class="projects__image">
@@ -301,6 +461,259 @@
          </section>
 
          <!--==================== PROJECT MODALS ====================-->
+         <!-- Modal Hanggar17 -->
+         <div id="modal-hanggar17" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('hanggar17')">&times;</span>
+               <h2 class="modal-title">Hanggar17 - HR & Field Report System</h2>
+
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Software Developer Intern</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Mar 2026 – Jun 2026</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>Next.js, TypeScript, PostgreSQL, NextAuth, Cloudflare R2, face-api.js</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-hanggar-desc">Dua sistem internal PT Hanggar Tujuh Belas: sistem manajemen HR dengan absensi face recognition, dan web app galeri foto mekanik untuk pelaporan pekerjaan di lapangan.</p>
+
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-hanggar-li1">Mengembangkan sistem HR internal dengan absensi face recognition melalui webcam</li>
+                        <li data-i18n="modal-hanggar-li2">Membangun alur persetujuan cuti dan izin dua tingkat dengan role-based access control dan ekspor laporan Excel</li>
+                        <li data-i18n="modal-hanggar-li3">Membangun web app galeri foto mekanik dan pelaporan lapangan dengan upload presigned URL ke S3 / Cloudflare R2</li>
+                        <li data-i18n="modal-hanggar-li4">Mengimplementasikan autentikasi NextAuth dan generate laporan PDF secara on-the-fly untuk dokumentasi</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/hanggar17/1.png" alt="Hanggar17 1" class="slider-image active">
+                           <img src="assets/img/hanggar17/2.png" alt="Hanggar17 2" class="slider-image">
+                           <img src="assets/img/hanggar17/3.png" alt="Hanggar17 3" class="slider-image">
+                           <img src="assets/img/hanggar17/4.png" alt="Hanggar17 4" class="slider-image">
+                           <img src="assets/img/hanggar17/10.png" alt="Hanggar17 5" class="slider-image">
+                           <img src="assets/img/hanggar17/11.png" alt="Hanggar17 6" class="slider-image">
+                           <img src="assets/img/hanggar17/12.png" alt="Hanggar17 7" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal INDI -->
+         <div id="modal-indi" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('indi')">&times;</span>
+               <h2 class="modal-title">INDI - Indonesia Defensive Driving Institute</h2>
+
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Full-Stack Developer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Des 2025 – Mei 2026</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>React 18, Vite, Node.js, Express, PostgreSQL, Redis, Google OAuth 2.0, Gemini API</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-indi-desc">Ekosistem web INDI: website company profile multibahasa dan platform asesmen psikometri pengemudi berbasis AI dengan pembuatan laporan otomatis.</p>
+
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-indi-li1">Membangun platform asesmen psikometri pengemudi dengan frontend React 18 + Vite dan backend Node.js/Express di atas PostgreSQL dan Redis</li>
+                        <li data-i18n="modal-indi-li2">Mengintegrasikan autentikasi Google OAuth 2.0 dan model Gemini untuk pembuatan laporan asesmen otomatis</li>
+                        <li data-i18n="modal-indi-li3">Mengimplementasikan auto-save draft berbasis Redis dan rendering laporan PDF per dimensi risiko pengemudi</li>
+                        <li data-i18n="modal-indi-li4">Membangun website company profile responsif dan multibahasa dengan React, Vite, Tailwind CSS, dan Framer Motion</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/indi/1.png" alt="INDI 1" class="slider-image active">
+                           <img src="assets/img/indi/2.png" alt="INDI 2" class="slider-image">
+                           <img src="assets/img/indi/3.png" alt="INDI 3" class="slider-image">
+                           <img src="assets/img/indi/4.png" alt="INDI 4" class="slider-image">
+                           <img src="assets/img/indi/5.png" alt="INDI 5" class="slider-image">
+                           <img src="assets/img/indi/6.png" alt="INDI 6" class="slider-image">
+                           <img src="assets/img/indi/7.png" alt="INDI 7" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal PT ANA -->
+         <div id="modal-ptana" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('ptana')">&times;</span>
+               <h2 class="modal-title">PT ANA Global Solusion - Company Profile</h2>
+
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Frontend Developer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Apr 2026 – Mei 2026</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>React, Vite, Framer Motion, Embla Carousel, Tailwind CSS</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-ptana-desc">Website company profile PT ANA Global Solusion, penyedia jasa training, konsultasi, dan sertifikasi K3 di Indonesia.</p>
+
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-ptana-li1">Membangun website company profile dengan React + Vite dan animasi Framer Motion</li>
+                        <li data-i18n="modal-ptana-li2">Mengimplementasikan komponen carousel Embla untuk galeri layanan dan daftar klien</li>
+                        <li data-i18n="modal-ptana-li3">Mengelola metadata SEO dan memastikan tampilan responsif di seluruh ukuran layar</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/ptana/1.png" alt="PT ANA 1" class="slider-image active">
+                           <img src="assets/img/ptana/2.png" alt="PT ANA 2" class="slider-image">
+                           <img src="assets/img/ptana/3.png" alt="PT ANA 3" class="slider-image">
+                           <img src="assets/img/ptana/4.png" alt="PT ANA 4" class="slider-image">
+                           <img src="assets/img/ptana/5.png" alt="PT ANA 5" class="slider-image">
+                           <img src="assets/img/ptana/6.png" alt="PT ANA 6" class="slider-image">
+                           <img src="assets/img/ptana/7.png" alt="PT ANA 7" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Modal Makara -->
+         <div id="modal-makara" class="project-modal">
+            <div class="modal-content">
+               <span class="modal-close" onclick="closeModal('makara')">&times;</span>
+               <h2 class="modal-title">Makara Creative Lab - Portfolio Website</h2>
+
+               <div class="modal-body">
+                  <div class="modal-info">
+                     <div class="info-item">
+                        <i class="ri-user-line"></i>
+                        <div>
+                           <strong data-i18n="modal-role">Role:</strong>
+                           <p>Frontend Developer</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-calendar-line"></i>
+                        <div>
+                           <strong data-i18n="modal-duration">Duration:</strong>
+                           <p>Feb 2026</p>
+                        </div>
+                     </div>
+                     <div class="info-item">
+                        <i class="ri-code-s-slash-line"></i>
+                        <div>
+                           <strong data-i18n="modal-tech">Tech:</strong>
+                           <p>React, Vite, Framer Motion, Embla Carousel, Lenis</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="modal-description">
+                     <h3 data-i18n="modal-label-about">About the Project</h3>
+                     <p data-i18n="modal-makara-desc">Portfolio agensi kreatif berperforma tinggi untuk Makara Creative Lab, menampilkan karya desain dan kampanye digital klien.</p>
+
+                     <h3 data-i18n="modal-label-resp">Key Responsibilities</h3>
+                     <ul>
+                        <li data-i18n="modal-makara-li1">Mengembangkan hero slider dinamis sebagai showcase utama karya agensi</li>
+                        <li data-i18n="modal-makara-li2">Membangun carousel klien auto-scroll menggunakan Embla Carousel</li>
+                        <li data-i18n="modal-makara-li3">Mengimplementasikan smooth scrolling berbasis Lenis dengan animasi Framer Motion</li>
+                     </ul>
+                  </div>
+
+                  <div class="modal-images">
+                     <div class="image-slider">
+                        <div class="slider-container">
+                           <img src="assets/img/makara/1.png" alt="Makara 1" class="slider-image active">
+                           <img src="assets/img/makara/2.png" alt="Makara 2" class="slider-image">
+                           <img src="assets/img/makara/3.png" alt="Makara 3" class="slider-image">
+                           <img src="assets/img/makara/4.png" alt="Makara 4" class="slider-image">
+                           <img src="assets/img/makara/5.png" alt="Makara 5" class="slider-image">
+                           <img src="assets/img/makara/6.png" alt="Makara 6" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide(this, -1)"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="slider-btn next" onclick="changeSlide(this, 1)"><i class="ri-arrow-right-s-line"></i></button>
+                        <div class="slider-dots"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
          <!-- Modal ProGram -->
          <div id="modal-program" class="project-modal">
             <div class="modal-content">
@@ -385,7 +798,7 @@
                         <i class="ri-calendar-line"></i>
                         <div>
                            <strong data-i18n="modal-duration">Duration:</strong>
-                           <p>Okt 2025 – Present</p>
+                           <p>Okt 2025 – Des 2025</p>
                         </div>
                      </div>
                      <div class="info-item">
@@ -840,12 +1253,16 @@
                </li>
 
                <li>
+                  <a href="#experience" class="footer__link" data-i18n="footer-link-experience">Experience</a>
+               </li>
+
+               <li>
                   <a href="#projects" class="footer__link" data-i18n="footer-link-projects">Projects</a>
                </li>
             </ul>
 
             <span class="footer__copy">
-               &#169; Mochamad Zidan Rusdhiana, 2025.
+               &#169; Mochamad Zidan Rusdhiana, 2026.
             </span>
          </div>
       </footer>

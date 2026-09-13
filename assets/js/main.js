@@ -4,6 +4,7 @@ const translations = {
       // Navigation
       'nav-home': 'Home',
       'nav-about': 'About Me',
+      'nav-experience': 'Experience',
       'nav-projects': 'Projects',
       'nav-contact': 'Contact Me',
       
@@ -19,11 +20,48 @@ const translations = {
       'about-label-tech': '<b>Tech:</b>',
       'about-label-tools': '<b>Tools:</b>',
       'about-btn-contact': 'Contact Me',
-      
+
+      // Experience Section
+      'experience-title': 'Experience.',
+      'exp-present': 'Present',
+      'exp-see-project': 'See the project',
+
+      // PT Bahtera Lentera Jaya
+      'exp-blj-role': 'Data Engineer Intern',
+      'exp-blj-li1': 'Developed and optimized a large-scale big-data pipeline for collecting and distributing professional profile data (a database of 851M+ records with hundreds of millions of monthly updates) across Python, Node.js, and Go.',
+      'exp-blj-li2': 'Built a data-consistency mechanism that flags incomplete profiles and holds them back from distribution until every section (collected via REST and GraphQL) is complete, backed by new database indexes.',
+      'exp-blj-li3': 'Co-developed the Real-Time Scraping API, an OpenAPI/Swagger-documented REST service returning structured JSON profile data by URL, secured with API keys.',
+      'exp-blj-li4': 'Built RabbitMQ session-provider workers and Telegram monitoring bots delivering daily operational statistics and alerting.',
+
+      // PT Hanggar Tujuh Belas
+      'exp-hanggar-role': 'Software Developer Intern',
+      'exp-hanggar-li1': 'Developed an internal HR management system with face-recognition attendance via webcam, a two-level leave and permit approval workflow, role-based access control, and Excel report exports.',
+      'exp-hanggar-li2': 'Built a mechanic photo-gallery and field-reporting web app with presigned-URL uploads to S3 / Cloudflare R2, NextAuth authentication, and on-the-fly PDF report generation.',
+
       // Projects Section Global
       'projects-title': 'Projects.',
-      
+
       // Project Cards (Titles & Descriptions)
+      // Hanggar17
+      'proj-hanggar-subtitle': 'Internal System',
+      'proj-hanggar-title': 'Hanggar17 - HR & Field Report',
+      'proj-hanggar-desc': 'HR system with face-recognition attendance and a mechanic field-reporting app with PDF generation.',
+
+      // INDI
+      'proj-indi-subtitle': 'AI Web Platform',
+      'proj-indi-title': 'INDI - Driving Institute',
+      'proj-indi-desc': 'Company profile and an AI-powered driver psychometric assessment platform with automated reporting.',
+
+      // PT ANA
+      'proj-ptana-subtitle': 'Company Profile',
+      'proj-ptana-title': 'PT ANA Global Solusion',
+      'proj-ptana-desc': 'Company profile website for an occupational safety training and certification provider, with Framer Motion animations.',
+
+      // Makara
+      'proj-makara-subtitle': 'Creative Portfolio',
+      'proj-makara-title': 'Makara Creative Lab',
+      'proj-makara-desc': 'Creative agency portfolio with a dynamic hero slider and Lenis-powered smooth scrolling.',
+
       // ProGram
       'proj-program-subtitle': 'MERN Stack',
       'proj-program-title': 'ProGram - Social Media',
@@ -77,6 +115,7 @@ const translations = {
       // Footer
       'footer-link-home': 'Home',
       'footer-link-about': 'About',
+      'footer-link-experience': 'Experience',
       'footer-link-projects': 'Projects',
       
       // Modals Global
@@ -87,6 +126,32 @@ const translations = {
       'modal-label-resp': 'Key Responsibilities',
 
       // Modal Contents (Descriptions & Responsibilities)
+      // Hanggar17 Modal
+      'modal-hanggar-desc': 'Two internal systems for PT Hanggar Tujuh Belas: an HR management system with face-recognition attendance, and a mechanic photo-gallery web app for field work reporting.',
+      'modal-hanggar-li1': 'Developed an internal HR system with face-recognition attendance via webcam',
+      'modal-hanggar-li2': 'Built a two-level leave and permit approval workflow with role-based access control and Excel report exports',
+      'modal-hanggar-li3': 'Built a mechanic photo-gallery and field-reporting web app with presigned-URL uploads to S3 / Cloudflare R2',
+      'modal-hanggar-li4': 'Implemented NextAuth authentication and on-the-fly PDF report generation for documentation',
+
+      // INDI Modal
+      'modal-indi-desc': 'The INDI web ecosystem: a multilingual company profile website and an AI-powered driver psychometric assessment platform with automated report generation.',
+      'modal-indi-li1': 'Built a driver psychometric assessment platform with a React 18 + Vite frontend and a Node.js/Express backend on PostgreSQL and Redis',
+      'modal-indi-li2': 'Integrated Google OAuth 2.0 authentication and Gemini models for automated assessment report generation',
+      'modal-indi-li3': 'Implemented Redis-based draft auto-save and PDF report rendering per driver risk dimension',
+      'modal-indi-li4': 'Built a responsive, multilingual company profile website using React, Vite, Tailwind CSS, and Framer Motion',
+
+      // PT ANA Modal
+      'modal-ptana-desc': 'Company profile website for PT ANA Global Solusion, a provider of occupational safety (K3) training, consulting, and certification services in Indonesia.',
+      'modal-ptana-li1': 'Built the company profile website with React + Vite and Framer Motion animations',
+      'modal-ptana-li2': 'Implemented Embla carousel components for the service gallery and client list',
+      'modal-ptana-li3': 'Managed SEO metadata and ensured a responsive layout across all screen sizes',
+
+      // Makara Modal
+      'modal-makara-desc': 'A high-performance creative agency portfolio for Makara Creative Lab, showcasing client design work and digital campaigns.',
+      'modal-makara-li1': 'Developed a dynamic hero slider as the main showcase for the agency\'s work',
+      'modal-makara-li2': 'Built an auto-scrolling client carousel using Embla Carousel',
+      'modal-makara-li3': 'Implemented Lenis-powered smooth scrolling with Framer Motion animations',
+
       // ProGram Modal
       'modal-program-desc': 'Complete social media website with posts, stories, and real-time messaging features.',
       'modal-program-li1': 'Designed scalable NoSQL database architecture with MongoDB and Mongoose',
@@ -134,6 +199,7 @@ const translations = {
       // Navigation
       'nav-home': 'Beranda',
       'nav-about': 'Tentang Saya',
+      'nav-experience': 'Pengalaman',
       'nav-projects': 'Proyek',
       'nav-contact': 'Kontak',
       
@@ -149,11 +215,44 @@ const translations = {
       'about-label-tech': '<b>Teknologi:</b>',
       'about-label-tools': '<b>Tools:</b>',
       'about-btn-contact': 'Hubungi Saya',
-      
+
+      // Experience Section
+      'experience-title': 'Pengalaman.',
+      'exp-present': 'Sekarang',
+      'exp-see-project': 'Lihat proyeknya',
+
+      // PT Bahtera Lentera Jaya
+      'exp-blj-role': 'Data Engineer Intern',
+      'exp-blj-li1': 'Mengembangkan dan mengoptimalkan big-data pipeline untuk pengumpulan dan distribusi data profil profesional (database 851 juta+ record dengan ratusan juta pembaruan setiap bulan) menggunakan Python, Node.js, dan Go.',
+      'exp-blj-li2': 'Membangun mekanisme konsistensi data yang menandai profil tidak lengkap dan menahannya dari distribusi sampai seluruh bagian data (REST dan GraphQL) lengkap, didukung index database baru.',
+      'exp-blj-li3': 'Mengembangkan Real-Time Scraping API terdokumentasi OpenAPI/Swagger yang mengembalikan data profil terstruktur berdasarkan URL, dengan pengamanan API key.',
+      'exp-blj-li4': 'Membangun worker session provider berbasis RabbitMQ dan bot monitoring Telegram untuk statistik operasional harian dan alerting.',
+
+      // PT Hanggar Tujuh Belas
+      'exp-hanggar-role': 'Software Developer Intern',
+      'exp-hanggar-li1': 'Mengembangkan sistem manajemen HR internal dengan absensi face recognition via webcam, alur persetujuan cuti dan izin dua tingkat, role-based access control, serta ekspor laporan Excel.',
+      'exp-hanggar-li2': 'Membangun web app galeri foto mekanik dan pelaporan lapangan dengan upload presigned URL ke S3 / Cloudflare R2, autentikasi NextAuth, dan generate laporan PDF secara on-the-fly.',
+
       // Projects Section Global
       'projects-title': 'Proyek.',
-      
+
       // Project Cards
+      'proj-hanggar-subtitle': 'Sistem Internal',
+      'proj-hanggar-title': 'Hanggar17 - HR & Laporan Lapangan',
+      'proj-hanggar-desc': 'Sistem HR dengan absensi face recognition dan aplikasi pelaporan lapangan mekanik dengan generate PDF.',
+
+      'proj-indi-subtitle': 'Platform Web AI',
+      'proj-indi-title': 'INDI - Driving Institute',
+      'proj-indi-desc': 'Company profile dan platform asesmen psikometri pengemudi berbasis AI dengan laporan otomatis.',
+
+      'proj-ptana-subtitle': 'Company Profile',
+      'proj-ptana-title': 'PT ANA Global Solusion',
+      'proj-ptana-desc': 'Website company profile penyedia jasa training dan sertifikasi K3 dengan animasi Framer Motion.',
+
+      'proj-makara-subtitle': 'Portfolio Kreatif',
+      'proj-makara-title': 'Makara Creative Lab',
+      'proj-makara-desc': 'Portfolio agensi kreatif dengan hero slider dinamis dan smooth scrolling berbasis Lenis.',
+
       'proj-program-subtitle': 'MERN Stack',
       'proj-program-title': 'ProGram - Media Sosial',
       'proj-program-desc': 'Website media sosial dengan fitur pesan real-time, stories, dan postingan menggunakan MERN Stack.',
@@ -200,6 +299,7 @@ const translations = {
       // Footer
       'footer-link-home': 'Beranda',
       'footer-link-about': 'Tentang',
+      'footer-link-experience': 'Pengalaman',
       'footer-link-projects': 'Proyek',
       
       // Modals Global
@@ -210,6 +310,32 @@ const translations = {
       'modal-label-resp': 'Tanggung Jawab Utama',
 
       // Modal Contents
+      // Hanggar17 Modal
+      'modal-hanggar-desc': 'Dua sistem internal PT Hanggar Tujuh Belas: sistem manajemen HR dengan absensi face recognition, dan web app galeri foto mekanik untuk pelaporan pekerjaan di lapangan.',
+      'modal-hanggar-li1': 'Mengembangkan sistem HR internal dengan absensi face recognition melalui webcam',
+      'modal-hanggar-li2': 'Membangun alur persetujuan cuti dan izin dua tingkat dengan role-based access control dan ekspor laporan Excel',
+      'modal-hanggar-li3': 'Membangun web app galeri foto mekanik dan pelaporan lapangan dengan upload presigned URL ke S3 / Cloudflare R2',
+      'modal-hanggar-li4': 'Mengimplementasikan autentikasi NextAuth dan generate laporan PDF secara on-the-fly untuk dokumentasi',
+
+      // INDI Modal
+      'modal-indi-desc': 'Ekosistem web INDI: website company profile multibahasa dan platform asesmen psikometri pengemudi berbasis AI dengan pembuatan laporan otomatis.',
+      'modal-indi-li1': 'Membangun platform asesmen psikometri pengemudi dengan frontend React 18 + Vite dan backend Node.js/Express di atas PostgreSQL dan Redis',
+      'modal-indi-li2': 'Mengintegrasikan autentikasi Google OAuth 2.0 dan model Gemini untuk pembuatan laporan asesmen otomatis',
+      'modal-indi-li3': 'Mengimplementasikan auto-save draft berbasis Redis dan rendering laporan PDF per dimensi risiko pengemudi',
+      'modal-indi-li4': 'Membangun website company profile responsif dan multibahasa dengan React, Vite, Tailwind CSS, dan Framer Motion',
+
+      // PT ANA Modal
+      'modal-ptana-desc': 'Website company profile PT ANA Global Solusion, penyedia jasa training, konsultasi, dan sertifikasi K3 di Indonesia.',
+      'modal-ptana-li1': 'Membangun website company profile dengan React + Vite dan animasi Framer Motion',
+      'modal-ptana-li2': 'Mengimplementasikan komponen carousel Embla untuk galeri layanan dan daftar klien',
+      'modal-ptana-li3': 'Mengelola metadata SEO dan memastikan tampilan responsif di seluruh ukuran layar',
+
+      // Makara Modal
+      'modal-makara-desc': 'Portfolio agensi kreatif berperforma tinggi untuk Makara Creative Lab, menampilkan karya desain dan kampanye digital klien.',
+      'modal-makara-li1': 'Mengembangkan hero slider dinamis sebagai showcase utama karya agensi',
+      'modal-makara-li2': 'Membangun carousel klien auto-scroll menggunakan Embla Carousel',
+      'modal-makara-li3': 'Mengimplementasikan smooth scrolling berbasis Lenis dengan animasi Framer Motion',
+
       // ProGram Modal
       'modal-program-desc': 'Website media sosial lengkap dengan fitur posts, stories, dan messaging real-time.',
       'modal-program-li1': 'Merancang arsitektur database NoSQL scalable dengan MongoDB dan Mongoose',
@@ -470,6 +596,7 @@ sr.reveal(`.home__name, .home__info,
            .about__container .section__title-1, .about__info,
            .contact__social, .contact__data`, {origin: 'left'})
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
+sr.reveal(`.experience__card`, {interval: 150, origin: 'bottom'})
 
 /*=============== PROJECT MODAL ===============*/
 function openModal(projectId) {
