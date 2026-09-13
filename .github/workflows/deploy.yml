@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Deploy setiap kali ada push ke branch main
+  push:
+    branches: [main]
+  # Tombol "Run workflow" manual di tab Actions
+  workflow_dispatch:
+
+# Izin yang dibutuhkan GITHUB_TOKEN untuk deploy ke Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Kalau ada push beruntun, biarkan deploy yang sedang jalan selesai
+# lalu langsung loncat ke commit paling baru
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Situs statis, tidak ada build step. Upload seluruh isi repo.
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
